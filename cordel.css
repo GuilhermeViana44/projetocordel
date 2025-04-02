@@ -1,77 +1,78 @@
 @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
 @font-face {
     font-family: 'Playwrite';
     src: url(PlaywriteHU-VariableFont_wght.ttf)format('truetype');
     font-weight: normal;
     font-size: normal;
 }
-body{
-    margin: 0px;
+html, body{
+    min-height: 100vh;
+    background-color: lightgray;
+    font-size: 30px;
 }
 header{
-    margin: 0px;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
 }
-header>nav{
-    padding: 100px;
+header{
     background-color: black;
     text-align: center;
-    
 }
 h1{
-    padding: 0px;
+    padding-top: 100px;
     margin: 0px;
     font-size: 65px;
     color: white;
 }
+header>p{
+    padding-bottom: 100px;
+}
 a{
     margin: 0px;
     color: white;
-    text-decoration: unset;
-
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 main{
     font-family: 'Playwrite';
 }
-#p1{
-    padding: 120px 0px 120px 0px;
-    font-size: 35px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
-#p2{
-    background: black url(imagens/background001.jpg) center center no-repeat fixed;
-    background-size: cover;
+section>p{
+    padding-bottom: 1px;
 }
-#p2>nav{
-    padding: 120px 0px 120px 0px;
-}
-#p2>nav>p{
+.normal{
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 35px;
-}
-#p3{
-    padding: 120px 0px 120px 0px;
-    font-size: 35px;
-}
-#p4{
-    background: black url(imagens/background002.jpg) center center no-repeat fixed;
-    background-size: cover;
-}
-#p4>nav{
-    padding: 120px 0px 120px 0px;
+    background-color: black;
+    box-shadow:  inset 6px 6px 12px 0px rgba(0, 0, 0, 0.589);
+
 
 }
-#p4>nav>p{
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 35px;
+.imagem{
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.233);
+    
 }
-#p5{
-    padding: 120px 0px 120px 0px;
-    font-size: 35px;
+section#img1{
+    background: black url(imagens/background001.jpg) right center no-repeat  ;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+section#img2{
+    background: black url(imagens/background002.jpg) right center no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 footer{
     text-align: center;
